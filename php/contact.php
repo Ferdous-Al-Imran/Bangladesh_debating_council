@@ -3,7 +3,8 @@ if($_REQUEST['first_name'] == '' || $_REQUEST['contact_email'] == '' ||  $_REQUE
   return "error";
 endif;
 if (filter_var($_REQUEST['contact_email'], FILTER_VALIDATE_EMAIL)):
-  $subject = 'Email from BDC'; // Subject of your email
+    // Subject of your email
+    $subject = 'Email from BDC';
 
   // Receiver email address
   $to = 'imran05252000@gmail.com';  //Changeable
@@ -26,9 +27,6 @@ if (filter_var($_REQUEST['contact_email'], FILTER_VALIDATE_EMAIL)):
   echo 'sent';
   else:
     return "error";
-  endif; 
+  endif;
 
-?>          > 
-<?php 
-
-
+?>
