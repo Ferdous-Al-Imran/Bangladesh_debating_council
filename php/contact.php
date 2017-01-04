@@ -3,11 +3,11 @@ if($_REQUEST['first_name'] == '' || $_REQUEST['contact_email'] == '' ||  $_REQUE
   return "error";
 endif;
 if (filter_var($_REQUEST['contact_email'], FILTER_VALIDATE_EMAIL)):
-    // Subject of your email
-    $subject = 'Email from BDC';
+  $subject = 'Email from BDC'; // Subject of your email
 
   // Receiver email address
-  $to = 'imran05252000@gmail.com';  //Changeable
+  $to = 'imran05252000@gmail.com';  //Change the email address by yours
+
 
   // prepare header
   $header = 'From: '. $_REQUEST['first_name'] . " " .$_REQUEST['last_name'] . ' <'. $_REQUEST['contact_email'] .'>'. "\r\n";
